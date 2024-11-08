@@ -182,3 +182,46 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     border: none;
     font-size: 16px;
 }
+
+.hide{
+    display: none;
+}
+
+/* Media query small divice*/
+@media screen and (max-width: 576px) {
+    .skills-container, .resume-container, footer ,.banner{
+        flex-direction: column;
+    }
+    footer{
+        padding: 0;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+    }
+    .btn-responsive{
+        margin-left: 150px;
+    }
+    .about{
+        padding: 0;
+    }
+    .item-discription{
+        font-weight: 600;
+        font-size: 12px;
+    }
+    .header{
+        background-image: none;
+    }
+    .banner-propile-pic{
+        width: 100%;
+    }
+    .banner{
+        margin: 0 ;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+}
